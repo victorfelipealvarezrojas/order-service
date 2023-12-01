@@ -15,6 +15,7 @@
     </properties>
     
     <dependencies>
+        <!-- dependencia para common-domain in common -->
         <dependency>
             <groupId>com.food.ordering.system</groupId>
             <artifactId>common-domain</artifactId>
