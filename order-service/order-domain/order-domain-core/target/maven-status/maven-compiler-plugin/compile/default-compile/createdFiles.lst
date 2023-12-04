@@ -1,1 +1,9 @@
-com\food\ordering\system\Main.class
+com\food\ordering\system\order\service\domain\valueobject\OrderItemId.class
+com\food\ordering\system\order\service\domain\entity\Product.class
+com\food\ordering\system\order\service\domain\valueobject\StreetAddress.class
+com\food\ordering\system\order\service\domain\entity\OrderItem$Builder.class
+com\food\ordering\system\order\service\domain\exception\OrderDomainException.class
+com\food\ordering\system\order\service\domain\entity\Order$Builder.class
+com\food\ordering\system\order\service\domain\entity\OrderItem.class
+com\food\ordering\system\order\service\domain\valueobject\TrackingId.class
+com\food\ordering\system\order\service\domain\entity\Order.class

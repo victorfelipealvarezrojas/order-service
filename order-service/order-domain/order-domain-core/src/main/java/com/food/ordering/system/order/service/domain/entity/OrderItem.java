@@ -13,6 +13,17 @@ public class OrderItem extends AggregateRoot<OrderItemId> {
     private final Money price;
     private final Money subTotal;
 
+    void initializerOrderItem(OrderId orderId, OrderItemId OrderItemId) {
+        this.orderId = orderId;
+        super.setId(OrderItemId);
+    }
+
+    boolean isPriceValid() {
+        return this.price.isGreaterThanZero() &&
+                this.price.equals(product.getPrice()) &&
+                price.multiply(quantity).equals(subTotal);
+    }
+
     private OrderItem(Builder builder) {
         super.setId(builder.OrderItemId);
         product = builder.product;

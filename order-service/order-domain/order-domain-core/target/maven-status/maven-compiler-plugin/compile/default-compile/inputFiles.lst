@@ -1,1 +1,7 @@
-C:\Users\victo\Documents\desarrollo\java\food-ordering-system\order-service\order-domain\order-domain-core\src\main\java\com\food\ordering\system\Main.java
+C:\Users\victo\Documents\desarrollo\java\food-ordering-system\order-service\order-domain\order-domain-core\src\main\java\com\food\ordering\system\order\service\domain\entity\OrderItem.java
+C:\Users\victo\Documents\desarrollo\java\food-ordering-system\order-service\order-domain\order-domain-core\src\main\java\com\food\ordering\system\order\service\domain\valueobject\OrderItemId.java
+C:\Users\victo\Documents\desarrollo\java\food-ordering-system\order-service\order-domain\order-domain-core\src\main\java\com\food\ordering\system\order\service\domain\exception\OrderDomainException.java
+C:\Users\victo\Documents\desarrollo\java\food-ordering-system\order-service\order-domain\order-domain-core\src\main\java\com\food\ordering\system\order\service\domain\valueobject\StreetAddress.java
+C:\Users\victo\Documents\desarrollo\java\food-ordering-system\order-service\order-domain\order-domain-core\src\main\java\com\food\ordering\system\order\service\domain\valueobject\TrackingId.java
+C:\Users\victo\Documents\desarrollo\java\food-ordering-system\order-service\order-domain\order-domain-core\src\main\java\com\food\ordering\system\order\service\domain\entity\Product.java
+C:\Users\victo\Documents\desarrollo\java\food-ordering-system\order-service\order-domain\order-domain-core\src\main\java\com\food\ordering\system\order\service\domain\entity\Order.java

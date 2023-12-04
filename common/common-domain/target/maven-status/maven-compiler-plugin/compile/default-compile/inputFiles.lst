@@ -1,0 +1,11 @@
+C:\Users\victo\Documents\desarrollo\java\food-ordering-system\common\common-domain\src\main\java\com\food\ordering\system\domain\valueobject\Money.java
+C:\Users\victo\Documents\desarrollo\java\food-ordering-system\common\common-domain\src\main\java\com\food\ordering\system\domain\valueobject\CustomerId.java
+C:\Users\victo\Documents\desarrollo\java\food-ordering-system\common\common-domain\src\main\java\com\food\ordering\system\domain\valueobject\ProductId.java
+C:\Users\victo\Documents\desarrollo\java\food-ordering-system\common\common-domain\src\main\java\com\food\ordering\system\domain\valueobject\BaseId.java
+C:\Users\victo\Documents\desarrollo\java\food-ordering-system\common\common-domain\src\main\java\com\food\ordering\system\domain\entity\BaseEntity.java
+C:\Users\victo\Documents\desarrollo\java\food-ordering-system\common\common-domain\src\main\java\com\food\ordering\system\domain\event\DomainEvent.java
+C:\Users\victo\Documents\desarrollo\java\food-ordering-system\common\common-domain\src\main\java\com\food\ordering\system\domain\valueobject\OrderId.java
+C:\Users\victo\Documents\desarrollo\java\food-ordering-system\common\common-domain\src\main\java\com\food\ordering\system\domain\valueobject\OrderStatus.java
+C:\Users\victo\Documents\desarrollo\java\food-ordering-system\common\common-domain\src\main\java\com\food\ordering\system\domain\entity\AggregateRoot.java
+C:\Users\victo\Documents\desarrollo\java\food-ordering-system\common\common-domain\src\main\java\com\food\ordering\system\domain\exception\DomainException.java
+C:\Users\victo\Documents\desarrollo\java\food-ordering-system\common\common-domain\src\main\java\com\food\ordering\system\domain\valueobject\RestaurantId.java
