@@ -16,7 +16,6 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="food-ordering-system" target="17" />
       <module name="untitled" target="17" />
     </bytecodeTargetLevel>
   </component>

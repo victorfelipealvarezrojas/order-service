@@ -70,7 +70,17 @@
         </dependencies>
    </dependencyManagement>
 
-<dependencies></dependencies>
+<dependencies>
+    <dependency>
+        <groupId>org.projectlombok</groupId>
+        <artifactId>lombok</artifactId>
+        <scope>provider</scope>
+    </dependency>
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-logging</artifactId>
+    </dependency>
+</dependencies>
 
 <!-- Configuración del plugin del compilador Maven para especificar las versiones de Java fuente y destino -->
     <build>
