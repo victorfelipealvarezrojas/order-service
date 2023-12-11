@@ -2,6 +2,7 @@ package com.food.ordering.system.order.service.domain.entity;
 
 import com.food.ordering.system.domain.entity.AggregateRoot;
 import com.food.ordering.system.domain.valueobject.*;
+
 import com.food.ordering.system.order.service.domain.exception.OrderDomainException;
 import com.food.ordering.system.order.service.domain.valueobject.OrderItemId;
 import com.food.ordering.system.order.service.domain.valueobject.StreetAddress;
@@ -15,7 +16,7 @@ public class Order extends AggregateRoot<OrderId> {
 
     private final CustomerId customerId;
     private final RestaurantId restaurantId;
-    private final StreetAddress streetAddress;
+    private final StreetAddress deliveryAddress;
     private final Money price;
     private final List<OrderItem> items;
 
@@ -115,12 +116,16 @@ public class Order extends AggregateRoot<OrderId> {
         super.setId(builder.orderId);
         customerId = builder.customerId;
         restaurantId = builder.restaurantId;
-        streetAddress = builder.streetAddress;
+        deliveryAddress = builder.deliveryAddress;
         price = builder.price;
         items = builder.items;
         trackingId = builder.trackingId;
         orderStatus = builder.orderStatus;
         failureMessages = builder.failureMessages;
+    }
+
+    public static Builder Builder() {
+        return new Builder();
     }
 
     public CustomerId getCustomerId() {
@@ -132,7 +137,7 @@ public class Order extends AggregateRoot<OrderId> {
     }
 
     public StreetAddress getStreetAddress() {
-        return streetAddress;
+        return deliveryAddress;
     }
 
     public Money getPrice() {
@@ -159,7 +164,7 @@ public class Order extends AggregateRoot<OrderId> {
         private OrderId orderId;
         private CustomerId customerId;
         private RestaurantId restaurantId;
-        private StreetAddress streetAddress;
+        private StreetAddress deliveryAddress;
         private Money price;
         private List<OrderItem> items;
         private TrackingId trackingId;
@@ -167,10 +172,6 @@ public class Order extends AggregateRoot<OrderId> {
         private List<String> failureMessages;
 
         private Builder() {}
-
-        public static Builder builder() {
-            return new Builder();
-        }
 
         public Builder orderId(OrderId val) {
             orderId = val;
@@ -187,8 +188,8 @@ public class Order extends AggregateRoot<OrderId> {
             return this;
         }
 
-        public Builder streetAddress(StreetAddress val) {
-            streetAddress = val;
+        public Builder deliveryAddress(StreetAddress val) {
+            deliveryAddress = val;
             return this;
         }
 

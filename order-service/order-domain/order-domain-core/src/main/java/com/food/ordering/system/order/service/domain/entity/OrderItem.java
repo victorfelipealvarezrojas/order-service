@@ -1,8 +1,10 @@
 package com.food.ordering.system.order.service.domain.entity;
 
 import com.food.ordering.system.domain.entity.AggregateRoot;
+
 import com.food.ordering.system.domain.valueobject.Money;
 import com.food.ordering.system.domain.valueobject.OrderId;
+
 import com.food.ordering.system.order.service.domain.valueobject.OrderItemId;
 
 public class OrderItem extends AggregateRoot<OrderItemId> {
@@ -30,6 +32,10 @@ public class OrderItem extends AggregateRoot<OrderItemId> {
         quantity = builder.quantity;
         price = builder.price;
         subTotal = builder.subTotal;
+    }
+
+    public static Builder Builder() {
+        return new Builder();
     }
 
     public OrderId getOrderId() {
@@ -60,10 +66,6 @@ public class OrderItem extends AggregateRoot<OrderItemId> {
         private Money subTotal;
 
         private Builder() {}
-
-        public static Builder builder() {
-            return new Builder();
-        }
 
         public Builder OrderItemId(OrderItemId val) {
             OrderItemId = val;
