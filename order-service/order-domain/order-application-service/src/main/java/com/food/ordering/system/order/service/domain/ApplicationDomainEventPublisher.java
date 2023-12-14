@@ -7,6 +7,9 @@ import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.context.ApplicationEventPublisherAware;
 import org.springframework.stereotype.Component;
 
+
+// TODO 1.1: revisar si la clase ApplicationDomainEventPublisher es necesaria
+
 @Slf4j
 @Component
 public class ApplicationDomainEventPublisher implements
@@ -23,7 +26,6 @@ public class ApplicationDomainEventPublisher implements
     @Override
     public void publish(OrderCreatedEvent domainEvent) {
         this.applicationEventPublisher.publishEvent(domainEvent);
-        log.info("OrderCreatedEvent is published for order id: {}", domainEvent.getOrder()
-                .getId().getValue());
+        log.info("OrderCreatedEvent is published for order id: {}", domainEvent.getOrder().getId().getValue());
     }
 }

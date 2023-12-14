@@ -52,7 +52,7 @@ public class OrderCreateCommandHandler {
         OrderCreatedEvent orderCreatedEvent = orderDomainService.validateAndInitiateOrder(order, restaurant);
         Order orderResult = saveOrder(order);
         log.info("Order is created with id: {}", orderResult.getId().getValue());
-        applicationDomainEventPublisher.publish(orderCreatedEvent);
+        applicationDomainEventPublisher.publish(orderCreatedEvent); // TODO 1.1: revisar si la clase ApplicationDomainEventPublisher es necesaria
         return orderDataMapper.orderToCreateOrderResponse(orderResult);
 
     }
