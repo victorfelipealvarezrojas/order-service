@@ -2,6 +2,7 @@ package com.food.ordering.system.order.service.domain.dto.create;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
+import lombok.Data;
 import lombok.Getter;
 
 import java.math.BigDecimal;
