@@ -15,5 +15,4 @@ com\food\ordering\system\order\service\domain\OrderDomainServiceImpl.class
 com\food\ordering\system\order\service\domain\entity\OrderItem$Builder.class
 com\food\ordering\system\order\service\domain\entity\Order$Builder.class
 com\food\ordering\system\order\service\domain\entity\OrderItem.class
-com\food\ordering\system\order\service\domain\OrderDomainService$OrderDomainServiceImpl.class
 com\food\ordering\system\order\service\domain\valueobject\TrackingId.class

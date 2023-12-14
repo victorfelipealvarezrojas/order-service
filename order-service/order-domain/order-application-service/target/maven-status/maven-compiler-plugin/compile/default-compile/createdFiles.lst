@@ -1,4 +1,5 @@
 com\food\ordering\system\order\service\domain\dto\message\PaymentResponse.class
+com\food\ordering\system\order\service\domain\OrderTrackCommandHandler.class
 com\food\ordering\system\order\service\domain\dto\track\TrackOrderResponse$TrackOrderResponseBuilder.class
 com\food\ordering\system\order\service\domain\dto\track\TrackOrderQuery$TrackOrderQueryBuilder.class
 com\food\ordering\system\order\service\domain\dto\create\OrderItem$OrderItemBuilder.class
@@ -12,6 +13,7 @@ com\food\ordering\system\order\service\domain\dto\create\OrderItem.class
 com\food\ordering\system\order\service\domain\mapper\OrderDataMapper.class
 com\food\ordering\system\order\service\domain\dto\create\CreateOrderResponse.class
 com\food\ordering\system\order\service\domain\ports\input\message\listener\payment\PaymentResponseMessageListener.class
+com\food\ordering\system\order\service\domain\OrderApplicationServiceImpl.class
 com\food\ordering\system\order\service\domain\dto\message\RestaurantApprovalResponse.class
 com\food\ordering\system\order\service\domain\dto\create\CreateOrderCommand.class
 com\food\ordering\system\order\service\domain\ports\input\message\listener\restaurantapproval\RestaurantApprovalResponseMessageListener.class
@@ -20,7 +22,9 @@ com\food\ordering\system\order\service\domain\ports\output\repository\Restaurant
 com\food\ordering\system\order\service\domain\dto\message\PaymentResponse$PaymentResponseBuilder.class
 com\food\ordering\system\order\service\domain\ports\output\repository\CustomerRepository.class
 com\food\ordering\system\order\service\domain\dto\track\TrackOrderResponse.class
+com\food\ordering\system\order\service\domain\ApplicationDomainEventPublisher.class
 com\food\ordering\system\order\service\domain\dto\create\CreateOrderResponse$CreateOrderResponseBuilder.class
 com\food\ordering\system\order\service\domain\ports\output\repository\OrderRepository.class
 com\food\ordering\system\order\service\domain\dto\create\OrderAddress$OrderAddressBuilder.class
 com\food\ordering\system\order\service\domain\dto\track\TrackOrderQuery.class
+com\food\ordering\system\order\service\domain\OrderCreateCommandHandler.class
