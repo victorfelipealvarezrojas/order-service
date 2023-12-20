@@ -7,6 +7,8 @@
     <modules>
         <module>order-service</module>
         <module>common</module>
+        <module>infrastructure</module>
+        <module>infrastructure/kafka</module>
     </modules>
 
     <parent>
@@ -25,9 +27,10 @@
     <properties>
         <maven-compiler-plugin.version>3.11.0</maven-compiler-plugin.version>
         <mockito.version>5.3.1</mockito.version>
+        <spring-kafka.version>3.0.0</spring-kafka.version>
+        <kafka-avro-serializer.version>7.0.1</kafka-avro-serializer.version>
+        <avro.version>1.11.2</avro.version>
     </properties>
-
- 
     
     <!-- dependencyManagement centraliza, de modo que todos los módulos hijos hereden las mismas versiones de dependencias   -->
     <dependencyManagement>
@@ -69,13 +72,34 @@
             </dependency>
             <!--FIN:dependencia y nro de version que tendra los modulos dentro de common-->
             
+            <!--INIT::dependencia matriz cafka-->
+            <dependency>
+                <groupId>com.food.ordering.system</groupId>
+                <artifactId>kafka-producer</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.food.ordering.system</groupId>
+                <artifactId>kafka-consumer</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.food.ordering.system</groupId>
+                <artifactId>kafka-model</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.food.ordering.system</groupId>
+                <artifactId>kafka-config-data</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <!--FIN:dependencia matriz cafka-->
             <dependency>
                 <groupId>org.mockito</groupId>
                 <artifactId>mockito-core</artifactId>
                 <version>${mockito.version}</version>
                 <scope>test</scope>
             </dependency>
-            
         </dependencies>
    </dependencyManagement>
 

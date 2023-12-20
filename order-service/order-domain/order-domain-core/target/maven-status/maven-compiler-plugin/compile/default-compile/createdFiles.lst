@@ -1,6 +1,7 @@
 com\food\ordering\system\order\service\domain\event\OrderCancelledEvent.class
 com\food\ordering\system\order\service\domain\event\OrderCreatedEvent.class
 com\food\ordering\system\order\service\domain\entity\Restaurant.class
+com\food\ordering\system\order\service\domain\exception\OrderNotFoundException.class
 com\food\ordering\system\order\service\domain\entity\Customer.class
 com\food\ordering\system\order\service\domain\entity\Restaurant$Builder.class
 com\food\ordering\system\order\service\domain\exception\OrderDomainException.class
